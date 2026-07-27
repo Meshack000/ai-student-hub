@@ -1,0 +1,58 @@
+import type { Assignment } from "@/types";
+
+export const assignments: Assignment[] = [
+  {
+    id: "a1",
+    courseId: "comp301",
+    title: "Design Document — Sprint 2",
+    dueDate: "2026-08-02",
+    priority: "high",
+    status: "in-progress",
+    progress: 60,
+  },
+  {
+    id: "a2",
+    courseId: "math214",
+    title: "Problem Set 6 — Eigenvalues",
+    dueDate: "2026-07-29",
+    priority: "high",
+    status: "not-started",
+    progress: 0,
+  },
+  {
+    id: "a3",
+    courseId: "csc220",
+    title: "Lab 4 — Binary Search Trees",
+    dueDate: "2026-07-28",
+    priority: "medium",
+    status: "in-progress",
+    progress: 75,
+  },
+  {
+    id: "a4",
+    courseId: "eng150",
+    title: "Technical Report Draft",
+    dueDate: "2026-08-05",
+    priority: "low",
+    status: "not-started",
+    progress: 0,
+  },
+  {
+    id: "a5",
+    courseId: "phy201",
+    title: "Lab Report — Projectile Motion",
+    dueDate: "2026-07-25",
+    priority: "high",
+    status: "overdue",
+    progress: 20,
+  },
+  {
+    id: "a6",
+    courseId: "csc220",
+    title: "Assignment 3 — Sorting Algorithms",
+    dueDate: "2026-07-20",
+    priority: "medium",
+    status: "completed",
+    progress: 100,
+  },
+];
