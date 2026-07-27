@@ -1,16 +1,41 @@
-import type {
-  NotificationItem,
-  Student,
-  ChatMessage,
-  StudyStat,
-} from "@/types";
-
 export * from "./courses";
 export * from "./assignments";
 export * from "./notes";
 export * from "./flashcards";
 export * from "./quizzes";
 export * from "./calendar-events";
+
+export interface Student {
+  id: string;
+  name: string;
+  email: string;
+  school: string;
+  major: string;
+  academicYear: string;
+  studyStreak: number;
+}
+
+export interface NotificationItem {
+  id: string;
+  type: "assignment" | "exam" | "ai-suggestion" | "study";
+  title: string;
+  message: string;
+  timestamp: string;
+  read: boolean;
+}
+
+export interface ChatMessage {
+  id: string;
+  role: "user" | "assistant";
+  content: string;
+  timestamp: string;
+}
+
+export interface StudyStat {
+  label: string;
+  value: number;
+  unit?: string;
+}
 
 export const currentStudent: Student = {
   id: "s1",
